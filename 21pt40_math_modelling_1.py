@@ -145,6 +145,9 @@ def estimate_pi(num_samples):
     pi_estimate = 4 * inside / num_samples
     return pi_estimate, x, y, distances
 
+def new_function_to_print():
+    print("Hii people!")
+
 num_samples = 1000000
 
 pi_est, x, y, distances = estimate_pi(num_samples)
@@ -166,6 +169,8 @@ print(f"Error: {abs(pi_est - np.pi):.5f} ({abs(pi_est - np.pi)/np.pi*100:.2f}%)"
 
 import numpy as np
 import matplotlib.pyplot as plt
+
+new_function_to_print()
 
 
 BUY_PRICE = 0.30
